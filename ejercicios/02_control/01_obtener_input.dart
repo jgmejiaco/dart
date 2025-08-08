@@ -4,7 +4,9 @@ main(){
   stdout.writeln('¿Cuál es tu nombre?');
 
   // Capturar la respuesta del prompt en de la terminal
-  String? nombre = stdin.readLineSync();
+  String? nombre = stdin.readLineSync() ?? 'no hay nombre';
+
+  // print('Tu nombre es: $nombre');
 
   stdout.writeln('Tu nombre es: $nombre');
 }
