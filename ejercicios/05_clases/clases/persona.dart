@@ -16,10 +16,16 @@ class Persona {
   // =============================================================================
 
   // Constructores
-   Persona( 
-    this.nombre,
-    this.edad 
-  );
+  Persona( this.nombre, this.edad );
+
+  Persona.persona2( this.nombre ) {
+    this.edad = 30;
+  }
+
+  Persona.persona3( String nombre ) {
+    this.edad = 50;
+    this.nombre = nombre;
+  }
 
   // Persona( String nombre, int edad ) {
   //   // print('Constructor de la clase Persona');
